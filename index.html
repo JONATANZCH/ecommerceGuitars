@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuitarLA: Nuestros Productos</title>
+    <!--normalize-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--=============== GOOGLE FONTS ===============-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <!--=============== ICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/app.css">
+    <!--MAIN JS-->
+    <script src="/js/main.js" type="module" defer></script>
+</head>
+<body>
+
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="navbar grid--container">
+        <a href="#" class="navbar__logo">
+            <img src="/img/icono.svg" alt="icono">
+            <span>Guitars</span>
+        </a>
+
+        <div class="navbar__menu">
+            <button title="button" class="button navbar__close">
+                <i class="bx bx-x button--icon"></i>
+            </button>
+
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">
+                    <span>Inicio</span>
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">
+                    <span>Productos</span>
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">
+                    <span>Blog</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar__buttons">
+            <button title="button" type="button" class="button navbar__wish">
+                <i class="bx bx-heart button--icon"></i>
+            </button>
+            <button title="button" type="button" class="button navbar__cart">
+                <i class="bx bx-cart button--icon"></i>
+            </button>
+            <button title="button" type="button" class="button navbar__toggle">
+                <i class="bx bx-menu button--icon"></i>
+            </button>
+        </div>
+        </nav>
+    </header>
+
+        
+    <!--=============== CART ===============-->
+    <section class="cart">
+        <!--=============== CLOSE BUTTON ===============-->
+        <button type="button" class="button cart__close" title="close cart">
+            <i class='bx bx-x button--icon'></i>
+        </button>
+
+        <div class="cart__content">
+            <h2 class="cart__title">Carrito:</h2>
+            <p class="cart__description">Hay <span class="cart__count">0</span> productos agregados al carrito de compras</p>
+        </div>
+
+        <div class="cart__container grid--container">
+            <div class="cart__list">
+                <!-- <article class="cart__item">
+                    <div class="cart__img">
+                        <img src="/img/guitarra_01.jpg" alt="imagen guitarra">
+                    </div>
+                    <div class="cart__content">
+                        <h2 class="cart__name">
+                            <span>Lukather</span>
+                            <span class="cart__price">$10000.00</span>
+                        </h2>
+                        <div class="cart__amout">
+                            <div>
+                                <span class="cart__subtotal">$10000.00</span> x <span class="cart__quantity">1</span>
+                            </div>
+                            <button type="button" class="button cart__button remove--article" title="remove from cart">
+                                <i class='bx bx-trash button--icon'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart__buttons">
+                        <button type="button" class="button cart__button" title="remove one">
+                            <i class='bx bx-minus button--icon'></i>
+                        </button>
+                        <span class="cart__quantity">1</span>
+                        <button type="button" class="button cart__button" title="add one">
+                            <i class='bx bx-plus button--icon'></i>
+                        </button>
+                    </div>
+                </article> -->
+            </div>
+
+            <div class="cart__discount">
+                <label for="discount" class="cart__label">Código de descuento</label>
+                <div class="cart__group">
+                    <input title="input" type="text" class="cart__input">
+                    <button type="button" class="button cart__button">Aplicar</button>
+                </div>
+                <div class="cart__discount-message">
+                    <p class="cart__discount-text">Se ha aplicado un descuento del <span class="cart__discount-price">10%</span> al total de la compra</p>
+                </div>
+            </div>
+
+            <div class="cart__footer">
+                <div class="cart__total">
+                <div>
+                    <span class="cart__subtotal-title">SubTotal:</span>
+                    <span class="cart__subtotal-price">$30.00</span>
+                </div>
+                <div>
+                    <span class="cart__total-title">Descuento:</span>
+                    <span class="cart__total-discount">0</span>
+                </div>
+                <div>
+                    <span class="cart__total-title">Total:</span>
+                    <span class="cart__total-price">$27.00</span>
+                </div>
+                </div>
+                <button type="button" class="button cart__button btn--comprar">Comprar</button>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="cursos">
+            <div class="cursos__contenedor cursos__grid">
+                <div class="cursos__contenido">
+                    <h2 class="cursos__heading">Aprende a tocar guitarra</h2>
+                    <p class="cursos__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque enim fugiat nisi inventore laborum facilis cum reiciendis vel totam velit molestias.</p>
+                    <a class="cursos__enlace" href="#">Más información</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products section">
+        <div class="products__container grid--container">
+            <div class="products__list">
+                <!-- <article class="products__item">
+                    <div class="products__img">
+                        <img src="/img/guitarra_01.jpg" alt="imagen guitarra">
+                        <span class="products__stock">Quedan 5</span>
+                    </div>
+                    <div class="products__content">
+                        <h2 class="products__name">
+                            <span>Lukather</span>
+                            <span class="products__price">$ 10000.00</span>
+                        </h2>
+                        <p class="products__info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="products__buttons">
+                        <button class="button products__button btn--wish">
+                            <i class="bx bx-heart button--icon"></i>
+                        </button>
+                        <button class="button products__button btn--cart">
+                            <i class="bx bx-cart button--icon"></i>
+                        </button>
+                    </div>
+                </article> -->
+            </div>
+        </div>
+        </section>
+
+        <section class="blog">
+            <h2 class="blog__heading">Nuestro Blog</h2>
+            <div class="blog__contenedor blog__grid">
+                <article class="entrada">
+                    <img class="entrada__imagen" src="img/blog_1.jpg" alt="imagen blog">
+    
+                    <div class="entrada__contenido">
+                        <h3 class="entrada__titulo">¿Como elegir tu primer guitarra?</h3>
+                        <p class="entrada__fecha">20 de Enero de 2022</p>
+                        <p class="entrada__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio delectus laborum, quas assumenda, dolorem placeat quo, aliquam labore incidunt alias molestiae maxime quaerat distinctio numquam quam voluptatum. Beatae, molestiae vitae?</p>
+    
+                        <a class="entrada__enlace" href="entrada.html">Leer Entrada</a>
+                    </div>
+                </article>
+    
+                <article class="entrada">
+                    <img class="entrada__imagen" src="img/blog_2.jpg" alt="imagen blog">
+    
+                    <div class="entrada__contenido">
+                        <h3 class="entrada__titulo">¿Como elegir tu primer guitarra?</h3>
+                        <p class="entrada__fecha">20 de Enero de 2022</p>
+                        <p class="entrada__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio delectus laborum, quas assumenda, dolorem placeat quo, aliquam labore incidunt alias molestiae maxime quaerat distinctio numquam quam voluptatum. Beatae, molestiae vitae?</p>
+    
+                        <a class="entrada__enlace" href="entrada.html">Leer Entrada</a>
+                    </div>
+                </article>
+    
+                <article class="entrada">
+                    <img class="entrada__imagen" src="img/blog_3.jpg" alt="imagen blog">
+    
+                    <div class="entrada__contenido">
+                        <h3 class="entrada__titulo">¿Como elegir tu primer guitarra?</h3>
+                        <p class="entrada__fecha">20 de Enero de 2022</p>
+                        <p class="entrada__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio delectus laborum, quas assumenda, dolorem placeat quo, aliquam labore incidunt alias molestiae maxime quaerat distinctio numquam quam voluptatum. Beatae, molestiae vitae?</p>
+    
+                        <a class="entrada__enlace" href="entrada.html">Leer Entrada</a>
+                    </div>
+                </article>
+    
+                <article class="entrada">
+                    <img class="entrada__imagen" src="img/blog_4.jpg" alt="imagen blog">
+    
+                    <div class="entrada__contenido">
+                        <h3 class="entrada__titulo">¿Como elegir tu primer guitarra?</h3>
+                        <p class="entrada__fecha">20 de Enero de 2022</p>
+                        <p class="entrada__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio delectus laborum, quas assumenda, dolorem placeat quo, aliquam labore incidunt alias molestiae maxime quaerat distinctio numquam quam voluptatum. Beatae, molestiae vitae?</p>
+    
+                        <a class="entrada__enlace" href="entrada.html">Leer Entrada</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__contenedor footer__contenido">
+            <nav class="footer__nav">
+                <a class="footer__enlace" href="index.html">Inicio</a>
+                <a class="footer__enlace" href="nosotros.html">Nosotros</a>
+                <a class="footer__enlace" href="blog.html">Blog</a>
+                <a class="footer__enlace" href="tienda.html">Tienda</a>
+            </nav>
+            <p class="footer__copyright">Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
